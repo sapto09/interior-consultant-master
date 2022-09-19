@@ -5,3 +5,123 @@ font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif;
 
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #181719;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+}
+
+/* header dan container */
+header {
+    width: 100%;
+    padding: 1em 0 1em 1em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.overview__link {
+    border: 2px solid white;
+    font-size: .825rem;
+    padding: .5em 1em;
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.overview__off {
+    visibility: hidden;
+}
+
+.nav__icon {
+    width: 28.5px;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hamburger {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    position: relative;
+    transition: .5s;
+}
+
+.hamburger + .hamburger {
+    margin-top: 5px;
+}
+
+/* animation close */
+.nav__icon--close .hamburger:nth-child(2){
+    transform: translateX(-50px);
+    transition: ease-out .5s;
+    opacity: 0;
+    box-shadow: none;
+}
+.nav__icon--close .hamburger:nth-child(1) {
+    transform: rotate(-45deg)  translateX(-11px) translateY(11px) ;
+    transition: ease-in .5s;
+}
+.nav__icon--close .hamburger:nth-child(3) {
+    transform: rotate(45deg) ;
+    transition: ease-in .5s;
+}
+
+/* end of animation close */
+
+.nav {
+    width: 100%;
+    padding: 0;
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav__visible {
+    visibility: visible;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    margin: 1em auto;
+}
+.nav__list {
+    text-align: center; 
+}
+.nav__item {
+    list-style: none;
+    padding: 1em 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1325rem;
+}
+.nav__link:hover,.nav__link:focus {
+    opacity: .75;
+    border-bottom: 2px solid white;
+}
+
+/* untuk menyembunyikan main dan footer ketika nav diklik */
+.main__off, .footer__off {
+    visibility: hidden;
+}
+
+main {
+    width: 100%;
+}
+
