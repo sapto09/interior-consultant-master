@@ -126,6 +126,8 @@ header {
 /* untuk menyembunyikan main dan footer ketika nav diklik */
 .main__off, .footer__off {
     visibility: hidden;
+    height: 0;
+    display: none;
 }
 
 main, footer {
