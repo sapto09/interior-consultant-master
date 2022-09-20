@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://sapto09.github.io/interior-consultant-master/">
+    <a href="https://github.com/sapto09/interior-consultant-master/">
       Solution
     </a>
     <span> | </span>
